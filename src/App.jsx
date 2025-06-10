@@ -4,7 +4,8 @@ import Trending from "./component/Trending"
 import Popular  from "./component/Popular"
 import Tv  from "./component/Tv"
 import Movies from "./component/Movies"
-import Peoples from "./component/Peoples"
+import About from './component/About';
+
 
 
 
@@ -17,7 +18,8 @@ const App = () => {
       <Route path="/Popular" element={<Popular/>}   />
       <Route path="/Tv" element={<Tv/>}   />
       <Route path="/Movies" element={<Movies/>}   />
-      <Route path="/People" element={<Peoples/>}   />
+      <Route path="/About" element={<About/>}   />
+      
   
       
 

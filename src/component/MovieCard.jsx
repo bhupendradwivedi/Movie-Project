@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Loder from './Loder';
 
 
 const MovieCard = ({ movie }) => {
@@ -9,8 +10,8 @@ const MovieCard = ({ movie }) => {
   
 
   return (
-      <div>
-          {/* anyother */}
+      <div className=" bg-black ">
+          
       <img
         src={
              
@@ -32,4 +33,4 @@ profile_path || poster_path
   );
 };
 
-export default MovieCard;
+export default MovieCard;  

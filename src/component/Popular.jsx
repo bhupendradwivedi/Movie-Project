@@ -44,7 +44,7 @@ useEffect(() => {
 </div>
       <div className="text-red-500 "></div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-4">
         {movies.length === 0 ? (
          <div className=" w-screen  text-center text-gray-200  text-6xl flex flex-col items-center justify-center"><Loder/></div>
         ) : (

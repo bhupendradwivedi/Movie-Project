@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from '../utils/axios';
 import Search from './Search';
 import Loder from './Loder';
-import Youtube from './Youtube'; // ✅ new import
+import Youtube from './Youtube'; 
 
 const Header = () => {
   const [movie, setMovie] = useState(null);
@@ -35,7 +35,9 @@ const Header = () => {
       if (trailer) {
         setTrailerUrl(`https://www.youtube.com/watch?v=${trailer.key}`);
       } else {
-        alert('Trailer not available');
+    
+        alert('Trailer not available')
+       ;
       }
     } catch (err) {
       console.error('Failed to load trailer:', err);
@@ -58,8 +60,8 @@ const Header = () => {
             className="w-full h-full object-cover overflow-hidden"
           />
           <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-start p-8 bg-gradient-to-r from-black/80 to-transparent">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">{movie.title}</h1>
-            <p className="max-w-2xl text-md md:text-lg text-gray-200 mb-4 line-clamp-4">
+            <h1 className=" text-5xl font-bold mb-4">{movie.title}</h1>
+            <p className="max-w-2xl  text-lg  text-gray-200 mb-4 ">
               {movie.overview}
             </p>
             <button
@@ -76,7 +78,7 @@ const Header = () => {
         </div>
       )}
 
-      {/* ✅ Trailer Player Component */}
+      
       <Youtube trailerUrl={trailerUrl} onClose={() => setTrailerUrl('')} />
     </div>
   );

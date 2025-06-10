@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Sidenav = () => {
 
 
@@ -41,17 +42,11 @@ const Sidenav = () => {
           >
             <i className="mr-2 ri-tv-fill"></i>Tv Shows
           </Link>
-          <Link
-            to="/People"
-            className="hover:bg-red-500 p-4 hover:text-white rounded-lg"
-          
-          >
-            <i className="mr-2 ri-team-fill"></i>People
-          </Link>
+      
 
           <hr className="border-zinc-700" />
           <h1 className="font-bold text-white">Website information</h1>
-          <Link
+          <Link   to="/About"
             className="hover:bg-red-500 p-4 hover:text-white rounded-lg"
         
           >
